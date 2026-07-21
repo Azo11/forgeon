@@ -1,0 +1,4 @@
+interface:
+  display_name: "Forgeon"
+  short_description: "Ship polished, traceable project releases"
+  default_prompt: "Use $forgeon to prepare this completed project for release."
