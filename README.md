@@ -17,6 +17,10 @@ cp -R forgeon ~/.codex/skills/forgeon
 
 Forgeon can then be invoked explicitly with `$forgeon` or triggered by release-oriented requests.
 
+## Maintenance Workflow
+
+Changes to Forgeon follow `AGENTS.md`: analyze the enhancement, explain impact and trade-offs, recommend an implementation, suggest a SemVer bump, present an execution plan, and wait for approval before editing or publishing.
+
 ## License
 
 MIT
