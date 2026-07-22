@@ -21,6 +21,8 @@ Forgeon can then be invoked explicitly with `$forgeon` or triggered by release-o
 
 Changes to Forgeon follow `AGENTS.md`: analyze the enhancement, explain impact and trade-offs, recommend an implementation, suggest a SemVer bump, present an execution plan, and wait for approval before editing or publishing.
 
+Before a delivery workflow runs, Forgeon performs an Environment Check for Git, GitHub CLI, authentication, deployment access, required environment variables, and project framework detection. It reports each prerequisite as `verified`, `blocked`, or `not applicable` without exposing secret values.
+
 ## License
 
 MIT
