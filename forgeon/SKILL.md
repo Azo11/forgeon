@@ -10,6 +10,7 @@ Turn a completed project into a validated, reproducible, portfolio-ready release
 ## Operating Rules
 
 - Inspect before editing: read `AGENTS.md`, local skills, `git status`, project manifests, and existing release/deploy configuration.
+- For Forgeon maintenance, follow the repository's `AGENTS.md`: analyze the enhancement, explain impact and implementation trade-offs, recommend an option, suggest a SemVer bump, show a plan, and wait for approval before editing.
 - Make reasonable framework-specific choices from the repository. Do not claim that a remote action succeeded without verifying it.
 - Before modifying the user's project or any external service, produce a concise execution plan and wait for explicit user confirmation before proceeding with any irreversible action.
 - Never print, commit, or expose secrets, tokens, device codes, private keys, or `.env` contents. Redact sensitive command output.
