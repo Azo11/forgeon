@@ -46,6 +46,27 @@ Before execution, verify the prerequisites for the approved plan:
 
 Classify each check as `verified`, `blocked`, or `not applicable`. Run this check after inspection and before modifying the project or external services. If a required prerequisite is `blocked`, complete only safe, independent local work and report the blocker before attempting dependent actions. Do not discover missing authentication or provider access halfway through a release workflow.
 
+## Dry Run Mode
+
+Before making changes, provide a preview containing:
+
+- Files to modify
+- Commands to execute
+- External actions
+- Expected result
+
+End the preview with a clear confirmation prompt. Do not execute any listed action until the user explicitly confirms. Refresh the preview if the scope, version, deployment target, or risk changes.
+
+## Rollback
+
+Before any irreversible action, record:
+
+- The current commit hash
+- The current deployment state, deployment ID, and production URL when available
+- The previous release or tag reference
+
+If deployment fails, preserve the failure logs and reason, determine whether the provider supports restoring the recorded deployment, and restore the previous version only within the confirmed scope and available permissions. Verify the restored version, then report both the failure and rollback result. If automatic restoration is unavailable or unsafe, stop and report the exact rollback command or provider action required.
+
 ## Safety
 
 Never perform destructive or irreversible operations without explicit confirmation. Use read-only inspection and previews first, request confirmation with the exact scope and expected impact, then execute only the confirmed action. Preserve unrelated user changes and do not broaden the confirmed scope.
@@ -82,7 +103,7 @@ Write release notes grouped under Added, Improved, Fixed, and Breaking Changes. 
 
 ## Completion Gate
 
-Before reporting completion, verify and state the status of every required delivery step and the Environment Check: Git, GitHub CLI, authentication, deployment access, required environment variables, framework detection, build, runtime smoke test, lint/tests, secret scan, `.gitignore`, README, docs, license, commit, push, tag/release, deployment, demo URL, and repository metadata. Mark each as verified, not applicable, or blocked. Coding alone is never task completion. A project is complete only when every required delivery step is finished, or when the remaining steps are clearly reported as blocked by external limitations such as missing credentials, permissions, unavailable services, or pending user decisions. Continue all safe local work before reporting blockers.
+Before reporting completion, verify and state the status of every required delivery step and the Environment Check: Git, GitHub CLI, authentication, deployment access, required environment variables, framework detection, Dry Run preview, rollback references, build, runtime smoke test, lint/tests, secret scan, `.gitignore`, README, docs, license, commit, push, tag/release, deployment, demo URL, and repository metadata. Mark each as verified, not applicable, or blocked. Coding alone is never task completion. A project is complete only when every required delivery step is finished, or when the remaining steps are clearly reported as blocked by external limitations such as missing credentials, permissions, unavailable services, or pending user decisions. Continue all safe local work before reporting blockers.
 
 ## Useful Commands
 
