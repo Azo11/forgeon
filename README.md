@@ -1,5 +1,5 @@
-# Forgeon
-
+<img width="1628" height="1360" alt="image" src="https://github.com/user-attachments/assets/b610217e-09d4-4f26-a2dc-623b08f00e5d" /># Forgeon
+项目完成后的发布、部署、上传 GitHub、版本交付和上线验证。
 Forgeon is a post-development delivery skill for turning completed projects into validated, reproducible, portfolio-ready releases.
 
 ## Contents
