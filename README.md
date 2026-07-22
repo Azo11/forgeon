@@ -1,6 +1,6 @@
 Forgeon
-项目完成后的发布、部署、上传 GitHub、版本交付和上线验证。
-Forgeon is a post-development delivery skill for turning completed projects into validated, reproducible, portfolio-ready releases.
+
+用于项目完成之后的发布、部署和上传github以及版本管理和上线验证。
 
 ## Contents
 
