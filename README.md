@@ -23,6 +23,8 @@ Changes to Forgeon follow `AGENTS.md`: analyze the enhancement, explain impact a
 
 Before a delivery workflow runs, Forgeon performs an Environment Check for Git, GitHub CLI, authentication, deployment access, required environment variables, and project framework detection. It reports each prerequisite as `verified`, `blocked`, or `not applicable` without exposing secret values.
 
+Forgeon also uses Dry Run mode: it previews files, commands, external actions, and expected results, then waits for confirmation. Before irreversible actions it records the current commit, deployment state, and previous release reference. Failed deployments retain failure evidence and restore the previous version when supported and authorized.
+
 ## License
 
 MIT
