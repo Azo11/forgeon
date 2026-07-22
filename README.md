@@ -1,6 +1,6 @@
 Forgeon
 
-用于项目完成之后的发布、部署和上传github以及版本管理和上线验证。
+用于项目完成之后的发布、部署和上传github以及版本管理和上线验证的skills。
 
 ## Contents
 
