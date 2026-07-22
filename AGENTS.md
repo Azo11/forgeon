@@ -33,6 +33,10 @@ python3 /Users/shenmengyuan/.codex/skills/.system/skill-creator/scripts/quick_va
 
 Review the final diff and confirm that `forgeon/SKILL.md` and `forgeon/agents/openai.yaml` remain valid.
 
+## Environment Check
+
+Before execution, verify the tools, credentials, services, environment variables, and project framework required by the planned delivery. Never print environment variable values; check only whether required variables are present and report missing names.
+
 ## Publishing
 
 Publishing actions must follow Forgeon's execution-plan-first and preview-confirmation-execution rules. Never commit, tag, push, create releases, or overwrite generated artifacts without explicit confirmation. A project is not complete until every required delivery step is finished or remaining steps are clearly reported as blocked by external limitations.
